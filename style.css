@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-size: "border-box";
+}
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+}
+
+
+.vid-div {
+    width: 100%;
+    height: 50vh;
+    top: 0;
+}
+
+/* text hover color */
+.jumbotron-text ,
+ {
+  transition: color .3s ease;
+}
+
+.jumbotron-text:hover h1,
+.jumbotron-text:hover p,
+.jumbotron-text:hover h2 {
+  color: #ffc107; /* Bootstrap warning color */
+}
+
+/* image hover scale */
+.hover-img {
+  transition: transform .3s ease;
+}
+
+.hover-img:hover {
+  transform: scale(1.05);
+}
+
